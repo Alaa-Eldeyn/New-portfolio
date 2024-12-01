@@ -26,6 +26,9 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
+export const cvUrl =
+  "https://drive.google.com/uc?export=download&id=1aAYrpYt7o8p9Q90GmM9dxUIUc02KIra2";
+
 const date = new Date();
 const yearsOfExperience = date.getFullYear() - 2023;
 const projectsCompleted = 15;

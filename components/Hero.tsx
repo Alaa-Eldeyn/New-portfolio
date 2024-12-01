@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AnimatedGridPattern } from "./ui/AnimatedBgHero";
 import { cn } from "@/lib/utils";
 import { FadeText } from "./ui/FadeText";
+import { cvUrl } from "@/data";
 
 const Hero = () => {
   return (
@@ -53,14 +54,14 @@ const Hero = () => {
             }}
           >
             <div className="flex gap-5 mt-5 md:mt-0">
-              <Link href="#about">
+              <Link href={cvUrl}>
                 <MagicButton
                   title="Download CV"
                   icon={<FaLocationArrow />}
                   position="right"
                 />
               </Link>
-              <Link href="#about">
+              <Link href="#projects">
                 <MagicButton
                   title="Show my work"
                   icon={<FaLocationArrow />}

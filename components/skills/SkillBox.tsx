@@ -9,7 +9,7 @@ function SkillBox({
   skill: {
     id: number;
     text: string;
-    icon: any;
+    icon: React.ReactNode;
   };
   i: number;
 }) {

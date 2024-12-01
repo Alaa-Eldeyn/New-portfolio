@@ -19,6 +19,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: "(var(--inter))",
+      },
       colors: {
         black: {
           DEFAULT: "#000",

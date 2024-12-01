@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import ScrollUp from "@/components/ScrollUp";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = localFont({
+  src: "./fonts/Inter-Regular.woff",
+  variable: "--inter",
+});
 
 export const metadata: Metadata = {
   title: "Alaa Eldeyn's Portfolio",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.variable} !font-inter antialiased`}>
         <ScrollUp />
 
         {children}

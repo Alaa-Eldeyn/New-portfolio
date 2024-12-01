@@ -66,7 +66,7 @@ function Projects() {
             </MagicCard>
           ))}
         </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center mt-5">
             <Link href={"https://github.com/Alaa-Eldeyn"} target="_Blank">
               <MagicButton
                 title="View All Projects"
