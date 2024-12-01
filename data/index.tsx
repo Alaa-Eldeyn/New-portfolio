@@ -26,6 +26,26 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
+const date = new Date();
+const yearsOfExperience = date.getFullYear() - 2023;
+const projectsCompleted = 15;
+const clients = 5;
+
+export const aboutData = [
+  {
+    number: yearsOfExperience,
+    text: "Years of Experience",
+  },
+  {
+    number: projectsCompleted,
+    text: "Project Completed",
+  },
+  {
+    number: clients,
+    text: "Clients",
+  },
+];
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -79,7 +99,46 @@ export const socialMedia = [
   },
   {
     id: 5,
-    link:"https://www.instagram.com/3lwa88/",
+    link: "https://www.instagram.com/3lwa88/",
     icon: <FaInstagram />,
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "E-commerce for Aquarium Fish & Admin Dashboard",
+    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
+    img: "/nemoApp.jpeg",
+    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://nemo-livid.vercel.app/",
+    sourceCode: "",
+  },
+  {
+    id: 2,
+    title: "E-commerce for Aquarium Fish & Admin Dashboard",
+    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
+    img: "/nemoApp.jpeg",
+    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://nemo-livid.vercel.app/",
+    sourceCode: "",
+  },
+  {
+    id: 3,
+    title: "E-commerce for Aquarium Fish & Admin Dashboard",
+    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
+    img: "/nemoApp.jpeg",
+    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://nemo-livid.vercel.app/",
+    sourceCode: "",
+  },
+  {
+    id: 4,
+    title: "E-commerce for Aquarium Fish & Admin Dashboard",
+    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
+    img: "/nemoApp.jpeg",
+    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://nemo-livid.vercel.app/",
+    sourceCode: "",
   },
 ];

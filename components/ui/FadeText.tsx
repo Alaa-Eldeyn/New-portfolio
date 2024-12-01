@@ -54,11 +54,10 @@ export function FadeText({
       animate="show"
       viewport={{ once: true }}
       variants={FADE_ANIMATION_VARIANTS}
+      className="!text-center"
     >
-      <motion.span className={className}>
-        {text}
-        {children}
-      </motion.span>
+      <motion.span className={className}>{text}</motion.span>
+      {children}
     </motion.div>
   );
 }

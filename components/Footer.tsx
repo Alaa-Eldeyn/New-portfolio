@@ -6,14 +6,14 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="z-10 flex mt-20 h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
+    <div className="flex mt-14 h-[500px] w-full flex-col items-center justify-center !overflow-hidden rounded-lg md:shadow-xl">
       <footer className="w-full pt-20 pb-10" id="contact">
         <div className="flex flex-col items-center">
           <h1 className="heading lg:max-w-[45vw]">
             Ready to take <span className="text-purple">your</span> digital
             presence to the next level?
           </h1>
-          <p className="text-white-200 md:mt-10 text-center">
+          <p className="text-white-200  my-3 md:mt-10 text-center">
             Reach out to me today and let&apos;s discuss how I can help you
             achieve your goals.
           </p>
@@ -25,7 +25,7 @@ function Footer() {
             />
           </a>
         </div>
-        <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <div className="flex mt-16 md:flex-row flex-col gap-5 justify-between items-center">
           <p className="md:text-base text-sm md:font-normal font-light flex items-center gap-2 group">
             Follow Me On Social Media
             <span className="group-hover:translate-x-3 transition">

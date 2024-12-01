@@ -12,12 +12,12 @@ const Hero = () => {
     <div className="pb-20 pt-36">
       <div>
         <Spotlight
-          className="-top-32 left-0 md:left-[15%] md:-top-[16%]"
+          className="-top-[900px] left-0 md:left-[15%] md:-top-[16%]"
           fill="white"
         />
       </div>
       <AnimatedGridPattern
-        numSquares={30}
+        numSquares={10}
         maxOpacity={0.1}
         duration={3}
         repeatDelay={1}
@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <FadeText
-            className="uppercase tracking-[2px] text-xs text-center text-blue-100"
+            className="uppercase tracking-[2px] text-xs !text-center text-blue-100"
             direction="down"
             text="Crafting Digital Experiences with Modern Web Tech"
           />
@@ -52,7 +52,7 @@ const Hero = () => {
               show: { transition: { delay: 0.5 } },
             }}
           >
-            <div className="flex gap-5">
+            <div className="flex gap-5 mt-5 md:mt-0">
               <Link href="#about">
                 <MagicButton
                   title="Download CV"
