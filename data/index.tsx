@@ -10,7 +10,6 @@ import {
   FaLinkedin,
   FaReact,
   FaWhatsapp,
-  FaYoutube,
 } from "react-icons/fa6";
 import { MdOutlineSpeed } from "react-icons/md";
 import {
@@ -25,9 +24,82 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { z } from "zod";
 
 export const cvUrl =
   "https://drive.google.com/uc?export=download&id=1aAYrpYt7o8p9Q90GmM9dxUIUc02KIra2";
+
+export const reviews = [
+  {
+    id: 1,
+    name: "د. على",
+    body: "بصراحة شغلكم أكتر من ممتاز، سعدت بالتعامل معكم جداً والله ياشباب فعلاً شغل متقن جدًا، شكراً مرة ثانية وأكيد ماراح يكون آخر تعامل إن شاء الله.",
+  },
+  {
+    id: 2,
+    name: "عبدالرحمن",
+    body: "التعامل معاك فعلا راقي جدًا وفعلا فاهم انت بتعمل اي كويس، تسلم إيدك والله يابشمهندس.",
+  },
+  {
+    id: 3,
+    name: "محمد",
+    body: "مشفتش حد بيهتم بالتفاصيل زيك، كل حاجة متظبطة آخر حاجة.",
+  },
+  {
+    id: 4,
+    name: "د. هند",
+    body: "أنا مبسوطة جدًا بالشغل مع حضرتك، الحمد لله فوق توقعاتي بكتير.",
+  },
+  {
+    id: 5,
+    name: "محمود",
+    body: "إنت من أكتر الناس المحترمة اللي اتعاملت معاها، ربنا يوفقك.",
+  },
+  {
+    id: 6,
+    name: "د. إيهاب",
+    body: "شغل جميل جدًا وبتسمع كل الملاحظات وتنفذها بنفس الجودة.",
+  },
+];
+
+export const projects = [
+  {
+    id: 4,
+    title: "Learning Management Platform & Dashboard",
+    des: "A specialized medical educational platform designed to seamlessly connect students and instructors. The platform offers a variety of courses, exams, Books, Blogs, including free and paid options, with integrated grading and progress tracking systems.",
+    img: "/medlearn.jpeg",
+    iconsList: ["/react.svg", "/js.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "",
+    sourceCode: "https://github.com/Alaa-Eldeyn/MedLearn-Platform",
+  },
+  {
+    id: 1,
+    title: "Aquarium Fish E-commerce & Dashboard",
+    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
+    img: "/nemoApp.jpeg",
+    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://nemo-livid.vercel.app/",
+    sourceCode: "https://github.com/Alaa-Eldeyn/Nemo-E-commerce",
+  },
+  {
+    id: 3,
+    title: "Progo Company Website",
+    des: "Redesigned and optimized the company landing page to improve speed, performance, and overall user experience.",
+    img: "/progo.jpg",
+    iconsList: ["/react.svg", "/js.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://progoeg.com/",
+    sourceCode: "https://github.com/Alaa-Eldeyn/Progo-company",
+  },
+  {
+    id: 2,
+    title: "MoveMate - Services Ordering website",
+    des: "A Swiss company's online platform offers home services like moving, cleaning, painting, furniture/lamp installation, and disposal. Users can easily request services, and the company ensures seamless follow-up and reliable assistance.",
+    img: "/movemate.jpeg",
+    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://2movemate.netlify.app/",
+    sourceCode: "https://github.com/Alaa-Eldeyn/Movemate",
+  },
+];
 
 const date = new Date();
 const yearsOfExperience = date.getFullYear() - 2023;
@@ -107,41 +179,20 @@ export const socialMedia = [
   },
 ];
 
-export const projects = [
-  {
-    id: 1,
-    title: "E-commerce for Aquarium Fish & Admin Dashboard",
-    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
-    img: "/nemoApp.jpeg",
-    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "https://nemo-livid.vercel.app/",
-    sourceCode: "",
-  },
-  {
-    id: 2,
-    title: "E-commerce for Aquarium Fish & Admin Dashboard",
-    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
-    img: "/nemoApp.jpeg",
-    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "https://nemo-livid.vercel.app/",
-    sourceCode: "",
-  },
-  {
-    id: 3,
-    title: "E-commerce for Aquarium Fish & Admin Dashboard",
-    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
-    img: "/nemoApp.jpeg",
-    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "https://nemo-livid.vercel.app/",
-    sourceCode: "",
-  },
-  {
-    id: 4,
-    title: "E-commerce for Aquarium Fish & Admin Dashboard",
-    des: "A modern e-commerce specialized for selling aquarium fish, customizable for other business domains, with a built-in admin dashboard for tracking sales and managing products. Admins can add, edit, or delete products directly within the website.",
-    img: "/nemoApp.jpeg",
-    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "https://nemo-livid.vercel.app/",
-    sourceCode: "",
-  },
-];
+export const contactSchema = z.object({
+  firstName: z
+    .string()
+    .min(1, { message: "First name is required" })
+    .max(255, { message: "First name is too long" }),
+  lastName: z.string().min(1, { message: "Last name is required" }),
+  email: z.string().email({ message: "Invalid email address" }),
+  phoneNumber: z
+    .string()
+    .min(4, { message: "Phone number is too short" })
+    .regex(
+      /^\+\d{1,3}\d{4,14}$/,
+      "Phone Number Format: +[country code][number] (e.g., +1234567890)"
+    ),
+  subject: z.string(),
+  message: z.string().min(1, { message: "Message is required" }),
+});

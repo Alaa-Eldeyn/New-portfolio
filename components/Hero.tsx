@@ -13,7 +13,7 @@ const Hero = () => {
     <div className="pb-20 pt-36">
       <div>
         <Spotlight
-          className="-top-[900px] left-0 md:left-[15%] md:-top-[16%]"
+          className="-top-[1200px] left-0 md:left-[16%] md:-top-[15%]"
           fill="white"
         />
       </div>
@@ -21,7 +21,6 @@ const Hero = () => {
         numSquares={10}
         maxOpacity={0.1}
         duration={3}
-        repeatDelay={1}
         className={cn(
           "[mask-image:radial-gradient(circle_at_center,white,transparent)]",
           "w-[80%] h-[90vh] absolute top-0 left-1/2 transform -translate-x-1/2"

@@ -12,7 +12,7 @@ function About() {
           className="relative w-full flex-col overflow-hidden rounded-lg border !bg-[#020617] md:shadow-xl p-5 sm:p-10"
           color={["#A07CFE", "#FE8FB5", "#FFBE7B"]}
         >
-          <div className="flex gap-x-10 gap-y-5 flex-col items-center md:items-start text-center md:text-start md:flex-row w-full">
+          <div className="flex gap-x-10 gap-y-5 flex-col items-center md:items-start text-center md:text-start md:flex-row w-full font-cairo">
             <div className="rounded-full overflow-hidden size-32 sm:!size-60">
               <Image
                 src="/1728632322492.jpg"
@@ -46,7 +46,7 @@ function About() {
                       +{item.number}
                     </span>
                     <span className="text-sm md:text-md text-gray-600 dark:text-gray-400">
-                      Years of Experience
+                      {item.text}
                     </span>
                   </div>
                 ))}

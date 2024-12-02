@@ -3,9 +3,9 @@ import "./globals.css";
 import ScrollUp from "@/components/ScrollUp";
 import localFont from "next/font/local";
 
-const inter = localFont({
-  src: "./fonts/Inter-Regular.woff",
-  variable: "--inter",
+const cairo = localFont({
+  src: "./fonts/Cairo-Bold.woff2",
+  variable: "--cairo",
 });
 
 export const metadata: Metadata = {
@@ -20,9 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <body className={`${inter.variable} !font-inter antialiased`}>
+      <body className={` ${cairo.variable} antialiased`}>
         <ScrollUp />
-
         {children}
       </body>
     </html>

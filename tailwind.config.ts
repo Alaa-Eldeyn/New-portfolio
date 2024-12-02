@@ -20,7 +20,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        inter: "(var(--inter))",
+        cairo: ["cairo", "sans-serif"],
       },
       colors: {
         black: {
@@ -166,8 +166,13 @@ const config = {
           "0%": { transform: "translateY(-50%)" },
           "100%": { transform: "translateY(0)" },
         },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
       },
       animation: {
+        marquee: "marquee var(--duration) linear infinite",
         grid: "grid 15s linear infinite",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         shine: "shine var(--duration) infinite linear",

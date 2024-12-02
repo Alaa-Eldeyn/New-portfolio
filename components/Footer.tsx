@@ -1,13 +1,12 @@
 import { FaArrowRight, FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
-import { RetroGrid } from "./ui/RetroGrid";
 import { socialMedia } from "@/data";
 import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="flex mt-14 h-[500px] w-full flex-col items-center justify-center !overflow-hidden rounded-lg md:shadow-xl">
-      <footer className="w-full pt-20 pb-10" id="contact">
+    <div className="relative flex mt-14 h-[500px] w-full flex-col items-center justify-center !overflow-hidden rounded-lg md:shadow-xl">
+      <footer className="w-full pt-20 pb-10 container z-10" id="contact">
         <div className="flex flex-col items-center">
           <h1 className="heading lg:max-w-[45vw]">
             Ready to take <span className="text-purple">your</span> digital
@@ -47,8 +46,13 @@ function Footer() {
           </div>
         </div>
       </footer>
-
-      <RetroGrid />
+      <div className="w-full absolute left-0 -bottom-0 lg:-bottom-32 min-h-60 z-0">
+        <img
+          src="/footer-grid.svg"
+          alt="grid"
+          className="w-full h-full opacity-50 "
+        />
+      </div>
     </div>
   );
 }
