@@ -11,6 +11,18 @@ const cairo = localFont({
 export const metadata: Metadata = {
   title: "Alaa Eldeyn's Portfolio",
   description: "a portfolio website for Alaa Eldeyn",
+  icons: ["/favicon.ico"],
+  keywords: [
+    "portfolio",
+    "web developer",
+    "Alaa Eldeyn",
+    "Alaa Eldeyn's Portfolio",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "3lwa88",
+    "an agilest, Front-End Developer with experience in designing and developing scalable websites and dashboards to support the digital growth of leading brands in Egypt, Turkey, and currently Saudi Arabia. Skilled in creating dynamic, responsive user interfaces with a focus on performance optimization and user-centered designs that enhance engagement and achieve business goals.",
+  ],
 };
 
 export default function RootLayout({

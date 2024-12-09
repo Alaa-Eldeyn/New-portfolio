@@ -25,14 +25,14 @@ function About() {
             </div>
             <div className="!leading-relaxed text-sm md:text-lg flex-1 text-start">
               <p>
-                I’m Alaa Eldeyn, an Agile Front-End Developer with over 2 years
-                of experience in designing and developing scalable websites and
-                dashboards that support the digital growth of leading brands in
-                Egypt, Turkey, and currently Saudi Arabia. I specialize in
-                creating dynamic, responsive user interfaces with a strong focus
-                on performance optimization and user-centered designs. My goal
-                is to craft modern, fast, and secure applications that enhance
-                user engagement and help businesses achieve their goals. I stay
+                I’m Alaa Eldeyn, an Agile Front-End Developer with an experience
+                in designing and developing scalable websites and dashboards
+                that support the digital growth of leading brands in Egypt,
+                Turkey, and currently Saudi Arabia. I specialize in creating
+                dynamic, responsive user interfaces with a strong focus on
+                performance optimization and user-centered designs. My goal is
+                to craft modern, fast, and secure applications that enhance user
+                engagement and help businesses achieve their goals. I stay
                 up-to-date with the latest development tools to ensure I deliver
                 cutting-edge web applications.
               </p>

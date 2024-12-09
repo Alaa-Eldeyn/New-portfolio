@@ -20,7 +20,6 @@ function Projects() {
                     src={project.img}
                     alt={project.title}
                     fill
-                    sizes="(max-width:768px) 100vw,(max-width:1200px) 50vw,33vw"
                     priority
                     className="rounded w-full object-cover transform hover:scale-105 transition-transform duration-500"
                   />

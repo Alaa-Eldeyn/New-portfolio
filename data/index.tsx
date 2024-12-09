@@ -64,13 +64,13 @@ export const reviews = [
 
 export const projects = [
   {
-    id: 4,
-    title: "Learning Management Platform & Dashboard",
-    des: "A specialized medical educational platform designed to seamlessly connect students and instructors. The platform offers a variety of courses, exams, Books, Blogs, including free and paid options, with integrated grading and progress tracking systems.",
-    img: "/medlearn.jpeg",
+    id: 3,
+    title: "Progo Company Website",
+    des: "Redesigned and optimized the company landing page to improve speed, performance, and overall user experience.",
+    img: "/progo.png",
     iconsList: ["/react.svg", "/js.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "",
-    sourceCode: "https://github.com/Alaa-Eldeyn/MedLearn-Platform",
+    link: "https://progoeg.com/",
+    sourceCode: "https://github.com/Alaa-Eldeyn/progo-website",
   },
   {
     id: 1,
@@ -82,13 +82,13 @@ export const projects = [
     sourceCode: "https://github.com/Alaa-Eldeyn/Nemo-E-commerce",
   },
   {
-    id: 3,
-    title: "Progo Company Website",
-    des: "Redesigned and optimized the company landing page to improve speed, performance, and overall user experience.",
-    img: "/progo.jpg",
+    id: 4,
+    title: "Learning Management Platform & Dashboard",
+    des: "A specialized medical educational platform designed to seamlessly connect students and instructors. The platform offers a variety of courses, exams, Books, Blogs, including free and paid options, with integrated grading and progress tracking systems.",
+    img: "/medlearn.jpeg",
     iconsList: ["/react.svg", "/js.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "https://progoeg.com/",
-    sourceCode: "https://github.com/Alaa-Eldeyn/Progo-company",
+    link: "",
+    sourceCode: "https://github.com/Alaa-Eldeyn/MedLearn-Platform",
   },
   {
     id: 2,
