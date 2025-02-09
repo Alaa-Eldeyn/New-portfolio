@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import ScrollUp from "@/components/ScrollUp";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/react";
 
 const cairo = localFont({
   src: "./fonts/Cairo-Bold.woff2",
@@ -32,6 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <Analytics />
       <body className={` ${cairo.variable} antialiased`}>
         <ScrollUp />
         {children}
