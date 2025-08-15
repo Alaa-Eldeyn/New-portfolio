@@ -24,6 +24,21 @@ export const metadata: Metadata = {
     "3lwa88",
     "an agilest, Front-End Developer with experience in designing and developing scalable websites and dashboards to support the digital growth of leading brands in Egypt, Turkey, and currently Saudi Arabia. Skilled in creating dynamic, responsive user interfaces with a focus on performance optimization and user-centered designs that enhance engagement and achieve business goals.",
   ],
+  openGraph: {
+    title: "Alaa Eldeyn's Portfolio",
+    description: "a portfolio website for Alaa Eldeyn",
+    url: "/",
+    siteName: "Alaa Eldeyn",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/1728632322492.jpg",
+        alt: "Alaa Eldeyn Portfolio Preview",
+      },
+    ],
+  },
+  
 };
 
 export default function RootLayout({

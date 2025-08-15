@@ -4,25 +4,38 @@ import { BorderBeam } from "./ui/BorderBeam";
 
 function Skills() {
   return (
-    <div id="skills">
+    <section id="skills" className="py-16 md:py-20">
       <div className="container">
-        <GradualSpacing text="My Skills" className="py-10" />
-        <div className="flex gap-x-5 gap-y-10 flex-wrap sm:gap-x-10 sm:gap-y-14 py-5">
+        <GradualSpacing text="My Skills" className="mb-10" />
+
+        <div
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-x-6 gap-y-12"
+          role="list"
+          aria-label="Skills"
+        >
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="font-cairo bg-[#0E162B] min-w-[35vw] sm:min-w-52 flex-1 relative z-10 flex flex-col items-center justify-center p-5 rounded-sm h-28 text-center border border-transparent hover:border-[#1F2937] border-opacity-50 transition !duration-100"
+              role="listitem"
+              className="group relative rounded-2xl border border-gray-800/80 bg-[#0B1222]/70 backdrop-blur-sm p-6 text-center font-cairo transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/40 hover:shadow-[0_0_0_1px_rgba(168,85,247,0.2),0_8px_30px_rgba(0,0,0,0.35)]"
+              aria-label={typeof skill.text === "string" ? skill.text : undefined}
             >
-              <BorderBeam size={80} duration={7} delay={9} />
-              <span className="absolute -top-8 !size-16 flex justify-center items-center text-[40px] p-2 rounded-full ">
+              
+              <span className="absolute bg-[#0B1222] -top-7 left-1/2 -translate-x-1/2 flex items-center justify-center size-14 rounded-full ring-1 ring-purple-500/30 shadow-lg text-3xl text-purple-300 transition-transform duration-300 group-hover:scale-105">
                 {skill.icon}
+                <BorderBeam size={40} duration={3} />
               </span>
-              <span className="text-md sm:!text-xl pt-2">{skill.text}</span>
+
+              <span className="mt-6 block text-sm sm:text-base font-medium text-gray-200 group-hover:text-white">
+                {skill.text}
+              </span>
+
+              <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-orange-500/5" />
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Skills;
