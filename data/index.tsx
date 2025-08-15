@@ -156,27 +156,32 @@ export const socialMedia = [
   {
     id: 1,
     link: "https://github.com/Alaa-Eldeyn",
-    icon: <FaGithub />,
+    icon: <FaGithub className="size-5" />,
+    hoverColor: "hover:text-[#f1f1f1]",
   },
   {
     id: 2,
     link: "https://www.linkedin.com/in/alaa-eldeyn/",
-    icon: <FaLinkedin />,
+    icon: <FaLinkedin className="size-5" />,
+    hoverColor: "hover:text-[#0077B5]",
   },
   {
     id: 3,
     link: "https://www.facebook.com/3lwa88",
-    icon: <FaFacebook />,
+    icon: <FaFacebook className="size-5" />,
+    hoverColor: "hover:text-[#1877F2]",
   },
   {
     id: 4,
-    link: "https://wa.me/+201010385495",
-    icon: <FaWhatsapp />,
+    link: "https://wa.me/+201010385495?text=السلام عليكم بشمهندس علاء",
+    icon: <FaWhatsapp className="size-5" />,
+    hoverColor: "hover:text-[#25D366]",
   },
   {
     id: 5,
     link: "https://www.instagram.com/3lwa88/",
-    icon: <FaInstagram />,
+    icon: <FaInstagram className="size-5" />,
+    hoverColor: "hover:text-[#E4405F]", 
   },
 ];
 

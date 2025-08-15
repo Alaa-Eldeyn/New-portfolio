@@ -16,7 +16,7 @@ function Footer() {
             Reach out to me today and let&apos;s discuss how I can help you
             achieve your goals.
           </p>
-          <Link target="_blank" href="mailto:alaa.eldeyn@gmail.com">
+          <Link target="_blank" href="https://wa.me/+201010385495?text=السلام عليكم بشمهندس علاء">
             <MagicButton
               title="Let's get in touch"
               icon={<FaLocationArrow />}
@@ -27,7 +27,7 @@ function Footer() {
         <div className="flex mt-16 md:flex-row flex-col gap-5 justify-between items-center">
           <p className="md:text-base text-sm md:font-normal font-light flex items-center gap-2 group">
             Follow Me On Social Media
-            <span className="group-hover:translate-x-3 transition">
+            <span className="group-hover:translate-x-3 transition group-hover:text-blue-600">
               <FaArrowRight />
             </span>
           </p>
@@ -38,7 +38,7 @@ function Footer() {
                 href={info.link}
                 target="_blank"
                 key={info.id}
-                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+                className={`w-10 h-10 cursor-pointer hover:scale-125 hover:bg-opacity-100 transition-all duration-200 ease-in-out flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 ${info.hoverColor}`}
               >
                 {info.icon}
               </Link>
