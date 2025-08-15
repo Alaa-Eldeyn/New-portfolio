@@ -55,7 +55,7 @@ function About() {
                 {aboutData.map((item, i) => (
                   <div
                     key={i}
-                    className={`group relative p-4 rounded-xl bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/50 hover:bg-gray-700/40 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 ${i==0?"col-span-2 lg:col-span-1":""}`}
+                    className={`group relative p-4 rounded-xl bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 hover:border-purple-500/50 hover:bg-gray-700/40 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10 ${i==0?"col-span-2 sm:col-span-1":""}`}
                   >
                     <div className="relative z-10 text-center space-y-2">
                       <div className="text-3xl md:text-4xl font-bold text-purple-400 group-hover:text-orange-400 transition-colors duration-300">

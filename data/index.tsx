@@ -69,7 +69,7 @@ export const projects = [
     des: "Redesigned and optimized the company landing page to improve speed, performance, and overall user experience.",
     img: "/progo.png",
     iconsList: ["/react.svg", "/js.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "https://progoeg.com/",
+    link: "https://progo2.netlify.app/",
     sourceCode: "https://github.com/Alaa-Eldeyn/progo-website",
   },
   {
@@ -87,7 +87,7 @@ export const projects = [
     des: "A specialized medical educational platform designed to seamlessly connect students and instructors. The platform offers a variety of courses, exams, Books, Blogs, including free and paid options, with integrated grading and progress tracking systems.",
     img: "/medlearn.jpeg",
     iconsList: ["/react.svg", "/js.svg", "/tailwind.svg", "/framer-motion.svg"],
-    link: "",
+    link: "https://practice2pass.net/",
     sourceCode: "https://github.com/Alaa-Eldeyn/MedLearn-Platform",
   },
   {
@@ -123,6 +123,7 @@ export const aboutData = [
 
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Experience", link: "#experience" },
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },

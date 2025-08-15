@@ -11,11 +11,11 @@ function Projects() {
     <section id="projects">
       <div className="container my-10 ">
         <GradualSpacing text="Recent Projects" className="pt-14" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 sm:mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-5 sm:mt-10">
           {projects.map((project) => (
-            <MagicCard key={project.id}>
+            <MagicCard key={project.id} className="max-w-lg mx-auto">
               <div className="flex flex-col items-center w-full h-full transform hover:shadow-xl transition-shadow duration-500">
-                <div className="relative w-full h-80 rounded-sm overflow-hidden">
+                <Link target="_blank" rel="noopener noreferrer" href={project.link} className="relative w-full h-80 rounded-sm overflow-hidden cursor-pointer">
                   <Image
                     src={project.img}
                     alt={project.title}
@@ -23,11 +23,11 @@ function Projects() {
                     priority
                     className="rounded w-full object-cover transform hover:scale-105 transition-transform duration-500"
                   />
-                </div>
+                </Link>
                 <div className="pt-5">
-                  <h2 className="text-2xl font-bold line-clamp-1 h-[32px]">
+                  <Link target="_blank" rel="noopener noreferrer" href={project.link} className="text-2xl font-bold line-clamp-1 h-[32px]">
                     {project.title}
-                  </h2>
+                  </Link>
                   <p className="mt-3 text-sm text-white-100 line-clamp-4 h-[80px]">
                     {project.des}
                   </p>
@@ -47,12 +47,16 @@ function Projects() {
                     </div>
                     <div className="flex items-center justify-center gap-4 text-white-100 text-xs sm:text-lg">
                       <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
                         href={project.sourceCode}
                         className="flex items-center justify-center gap-1 hover:text-purple"
                       >
                         GitHub <FaLocationArrow />
                       </Link>
                       <Link
+                        target="_blank"
+                        rel="noopener noreferrer"
                         href={project.link}
                         className="flex items-center justify-center gap-1 hover:text-purple"
                       >
@@ -66,7 +70,7 @@ function Projects() {
           ))}
         </div>
           <div className="flex items-center justify-center mt-5">
-            <Link href={"https://github.com/Alaa-Eldeyn"} target="_Blank">
+            <Link target="_blank" rel="noopener noreferrer" href={"https://github.com/Alaa-Eldeyn"}>
               <MagicButton
                 title="View All Projects"
                 icon={<FaLocationArrow />}

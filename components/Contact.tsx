@@ -37,7 +37,7 @@ function Contact() {
   return (
     <div id="contact" className="container">
       <GradualSpacing text="Contact me" className="my-10" />
-      <div className="flex gap-5 justify-around flex-col-reverse sm:flex-row">
+      <div className="flex gap-5 justify-around flex-col-reverse lg:flex-row">
         <div className="mt-5">
           <h1 className="text-xl sm:text-5xl mb-5 dark:text-white-100 font-bold tracking-tight">
             Send Us a Note and Initiate the Dialogue!
@@ -75,7 +75,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+          <div className="inline-flex items-center mt-8 text-gray-600 dark:text-gray-400 group">
             <svg
               fill="none"
               stroke="currentColor"
@@ -83,7 +83,7 @@ function Contact() {
               strokeLinejoin="round"
               strokeWidth="1.5"
               viewBox="0 0 24 24"
-              className="w-8 h-8 text-gray-500"
+              className="w-8 h-8 text-gray-500 group-hover:text-green-500 transition-all duration-300"
             >
               <path
                 strokeLinecap="round"
@@ -92,19 +92,21 @@ function Contact() {
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            <div className="ml-4 text-md tracking-wide font-semibold w-40">
+            <div className="ml-4 text-md tracking-wide font-semibold w-40 group-hover:text-green-500">
               <Link
+                target="_blank"
+                rel="noopener noreferrer"
                 href={
                   "https://wa.me/+201010385495?text=السلام عليكم بشمهندس علاء"
                 }
-                className="hover:underline hover:text-white transition-colors"
+                className="hover:underline transition-all duration-300"
               >
                 (+20) 01010385495
               </Link>
             </div>
           </div>
 
-          <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+          <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400 group">
             <svg
               fill="none"
               stroke="currentColor"
@@ -112,7 +114,7 @@ function Contact() {
               strokeLinejoin="round"
               strokeWidth="1.5"
               viewBox="0 0 24 24"
-              className="w-8 h-8 text-gray-500"
+              className="w-8 h-8 text-gray-500 group-hover:text-[#f27f0c] transition-all duration-300"
             >
               <path
                 strokeLinecap="round"
@@ -122,9 +124,10 @@ function Contact() {
               />
             </svg>
             <div className="ml-4 text-md tracking-wide font-semibold w-40">
-              <Link
+              <Link target="_blank"
+                rel="noopener noreferrer"
                 href={"mailto:alaa.eldeyn@gmail.com"}
-                className="hover:underline hover:text-white transition-colors"
+                className="hover:underline group-hover:text-[#f27f0c] transition-all duration-300"
               >
                 alaa.eldeyn@gmail.com
               </Link>
