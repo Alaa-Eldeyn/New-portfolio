@@ -27,7 +27,7 @@ import {
 import { z } from "zod";
 
 export const cvUrl =
-  "https://drive.google.com/uc?export=download&id=1-SL9dbtKKDGWcSZIuN0sq1YyACmw9dcR";
+  "https://drive.google.com/uc?export=download&id=1KAfVkGREX15azOqdgjV1_N5jYC1WGbMD";
 
 export const reviews = [
   {
