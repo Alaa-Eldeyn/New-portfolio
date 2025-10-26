@@ -8,7 +8,7 @@ export default function TimelineDemo() {
         {
             title: "2025 - Now",
             content: (
-                <div>
+                <div key={"ex-1"}>
                     <h3 className="text-lg lg:text-4xl font-bold text-neutral-900 dark:text-white">
                         ITLegend Company
                     </h3>
@@ -69,7 +69,7 @@ export default function TimelineDemo() {
         {
             title: "2024 - 2025",
             content: (
-                <div>
+                <div key={"ex-2"}>
                     <h3 className="text-lg lg:text-4xl font-bold text-neutral-900 dark:text-white">
                         Progo Company
                     </h3>
@@ -113,7 +113,7 @@ export default function TimelineDemo() {
         {
             title: "2023 - 2024",
             content: (
-                <div>
+                <div key={"ex-3"}>
                     <h3 className="text-lg lg:text-4xl font-bold text-neutral-900 dark:text-white">
                         ESH Company
                     </h3>

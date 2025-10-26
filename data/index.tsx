@@ -64,6 +64,16 @@ export const reviews = [
 
 export const projects = [
   {
+    id: 5,
+    title: "ITLegend Platform",
+    des: "ITLegend is an online programming learning platform with specialized courses, delivered with practical experience and high quality to prepare you for the job market.",
+    img: "/itlegend.webp",
+    iconsList: ["/next.svg", "/ts.svg", "/tailwind.svg", "/framer-motion.svg"],
+    link: "https://itlegend.net/",
+    sourceCode: "https://www.youtube.com/watch?v=ilyluEgH5OQ&t=786s",
+    isYoutube: true,
+  },
+  {
     id: 3,
     title: "Progo Company Website",
     des: "Redesigned and optimized the company landing page to improve speed, performance, and overall user experience.",
@@ -103,8 +113,8 @@ export const projects = [
 
 const date = new Date();
 const yearsOfExperience = date.getFullYear() - 2023;
-const projectsCompleted = 15;
-const clients = 5;
+const projectsCompleted = 18;
+const clients = 7;
 
 export const aboutData = [
   {

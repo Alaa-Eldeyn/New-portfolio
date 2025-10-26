@@ -46,21 +46,21 @@ function Projects() {
                       ))}
                     </div>
                     <div className="flex items-center justify-center gap-4 text-white-100 text-xs sm:text-lg">
-                      <Link
+                      {project?.sourceCode && <Link
                         target="_blank"
                         rel="noopener noreferrer"
                         href={project.sourceCode}
                         className="flex items-center justify-center gap-1 hover:text-purple"
                       >
-                        GitHub <FaLocationArrow />
-                      </Link>
+                        {project?.isYoutube ? "Watch" : "GitHub"}  <FaLocationArrow />
+                      </Link>}
                       <Link
                         target="_blank"
                         rel="noopener noreferrer"
                         href={project.link}
                         className="flex items-center justify-center gap-1 hover:text-purple"
                       >
-                        Demo <FaLocationArrow />
+                        Visit <FaLocationArrow />
                       </Link>
                     </div>
                   </div>
